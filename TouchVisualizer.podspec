@@ -32,5 +32,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.swift_version = '4.2'
 
-  s.source_files = 'TouchVisualizer/**/*.swift'
+  s.source_files = 'Sources/TouchVisualizer/**/*.swift'
 end

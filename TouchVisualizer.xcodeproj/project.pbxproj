@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		909724841CFE16FB0017F85F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909724801CFE16FB0017F85F /* Configuration.swift */; };
-		909724851CFE16FB0017F85F /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909724811CFE16FB0017F85F /* TouchView.swift */; };
-		909724861CFE16FB0017F85F /* UIWindow+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909724821CFE16FB0017F85F /* UIWindow+Swizzle.swift */; };
-		909724871CFE16FB0017F85F /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909724831CFE16FB0017F85F /* Visualizer.swift */; };
-		FF1A1AA51AFF6C2200267156 /* TouchVisualizer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1A1AA41AFF6C2200267156 /* TouchVisualizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		371DDA9A242E2B2F00E6504D /* UIWindow+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DDA95242E2B2F00E6504D /* UIWindow+Swizzle.swift */; };
+		371DDA9B242E2B2F00E6504D /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DDA96242E2B2F00E6504D /* Visualizer.swift */; };
+		371DDA9C242E2B2F00E6504D /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DDA97242E2B2F00E6504D /* TouchView.swift */; };
+		371DDA9E242E2B2F00E6504D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DDA99242E2B2F00E6504D /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		909724801CFE16FB0017F85F /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		909724811CFE16FB0017F85F /* TouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
-		909724821CFE16FB0017F85F /* UIWindow+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Swizzle.swift"; sourceTree = "<group>"; };
-		909724831CFE16FB0017F85F /* Visualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		371DDA95242E2B2F00E6504D /* UIWindow+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIWindow+Swizzle.swift"; path = "Sources/TouchVisualizer/UIWindow+Swizzle.swift"; sourceTree = SOURCE_ROOT; };
+		371DDA96242E2B2F00E6504D /* Visualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Visualizer.swift; path = Sources/TouchVisualizer/Visualizer.swift; sourceTree = SOURCE_ROOT; };
+		371DDA97242E2B2F00E6504D /* TouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchView.swift; path = Sources/TouchVisualizer/TouchView.swift; sourceTree = SOURCE_ROOT; };
+		371DDA99242E2B2F00E6504D /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/TouchVisualizer/Configuration.swift; sourceTree = SOURCE_ROOT; };
 		FF1A1A9F1AFF6C2200267156 /* TouchVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1A1AA31AFF6C2200267156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF1A1AA41AFF6C2200267156 /* TouchVisualizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchVisualizer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +52,10 @@
 		FF1A1AA11AFF6C2200267156 /* TouchVisualizer */ = {
 			isa = PBXGroup;
 			children = (
-				909724801CFE16FB0017F85F /* Configuration.swift */,
-				909724811CFE16FB0017F85F /* TouchView.swift */,
-				909724821CFE16FB0017F85F /* UIWindow+Swizzle.swift */,
-				909724831CFE16FB0017F85F /* Visualizer.swift */,
-				FF1A1AA41AFF6C2200267156 /* TouchVisualizer.h */,
+				371DDA99242E2B2F00E6504D /* Configuration.swift */,
+				371DDA97242E2B2F00E6504D /* TouchView.swift */,
+				371DDA95242E2B2F00E6504D /* UIWindow+Swizzle.swift */,
+				371DDA96242E2B2F00E6504D /* Visualizer.swift */,
 				FF1A1AA21AFF6C2200267156 /* Supporting Files */,
 			);
 			path = TouchVisualizer;
@@ -79,7 +76,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF1A1AA51AFF6C2200267156 /* TouchVisualizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,10 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909724861CFE16FB0017F85F /* UIWindow+Swizzle.swift in Sources */,
-				909724871CFE16FB0017F85F /* Visualizer.swift in Sources */,
-				909724851CFE16FB0017F85F /* TouchView.swift in Sources */,
-				909724841CFE16FB0017F85F /* Configuration.swift in Sources */,
+				371DDA9A242E2B2F00E6504D /* UIWindow+Swizzle.swift in Sources */,
+				371DDA9C242E2B2F00E6504D /* TouchView.swift in Sources */,
+				371DDA9E242E2B2F00E6504D /* Configuration.swift in Sources */,
+				371DDA9B242E2B2F00E6504D /* Visualizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +282,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TouchVisualizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.molabo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -307,7 +303,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TouchVisualizer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.molabo.$(PRODUCT_NAME:rfc1034identifier)";
