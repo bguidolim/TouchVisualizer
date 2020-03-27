@@ -3,6 +3,7 @@
 //  TouchVisualizer
 //
 
+#if os(iOS)
 import UIKit
 
 public struct Configuration {
@@ -52,3 +53,4 @@ public struct Configuration {
 
     public init(){}
 }
+#endif

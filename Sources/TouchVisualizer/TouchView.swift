@@ -3,6 +3,7 @@
 //  TouchVisualizer
 //
 
+#if os(iOS)
 import UIKit
 
 final public class TouchView: UIImageView {
@@ -107,3 +108,4 @@ final public class TouchView: UIImageView {
         }
     }
 }
+#endif

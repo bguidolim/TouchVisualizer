@@ -3,6 +3,7 @@
 //  TouchVisualizer
 //
 
+#if os(iOS)
 import UIKit
 
 fileprivate var isSwizzled = false
@@ -36,3 +37,4 @@ extension UIWindow {
         swizzledSendEvent(event)
     }
 }
+#endif

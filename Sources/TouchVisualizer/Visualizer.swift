@@ -3,6 +3,7 @@
 //  TouchVisualizer
 //
 
+#if os(iOS)
 import UIKit
 
 final public class Visualizer:NSObject {
@@ -246,3 +247,4 @@ extension Visualizer {
         print(log, terminator: "")
     }
 }
+#endif
