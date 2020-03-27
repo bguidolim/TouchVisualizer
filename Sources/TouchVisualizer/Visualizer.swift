@@ -173,7 +173,7 @@ extension Visualizer {
                         self.log(touch)
                     })
                 }
-            case .stationary, .regionEntered, .regionMoved, .regionExited:
+            case .stationary:
                 break
             @unknown default:
                 break
@@ -211,9 +211,6 @@ extension Visualizer {
             case .stationary: phase = "S"
             case .ended: phase = "E"
             case .cancelled: phase = "C"
-            case .regionEntered: phase = "REN"
-            case .regionMoved: phase = "RM"
-            case .regionExited: phase = "REX"
             @unknown default: phase = "U"
             }
             
